@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 const channels = [
   { label: "Email", value: profile.email, href: `mailto:${profile.email}`, icon: Mail },
   { label: "WhatsApp", value: "Kirim pesan langsung", href: profile.whatsapp, icon: MessageCircle },
-  { label: "Instagram", value: "@rangga.aditya", href: profile.instagram, icon: Instagram },
-  { label: "GitHub", value: "ranggaaditya", href: profile.github, icon: Github },
+  { label: "Instagram", value: "@uppitt_", href: profile.instagram, icon: Instagram },
+  { label: "GitHub", value: "uuppiitt", href: profile.github, icon: Github },
 ];
 
 export default function ContactPage() {
