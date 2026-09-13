@@ -26,10 +26,10 @@ export const metadata: Metadata = {
   description: profile.tagline,
   keywords: ["portofolio akademik", "siswa SMA", "arsip tugas sekolah", profile.name],
   openGraph: {
-    title: `${profile.name} — Portofolio Akademik`,
+    title: `Portofolio Uppit.`,
     description: profile.tagline,
     url: siteUrl,
-    siteName: "Portofolio Uppit.",
+    siteName: profile.name,
     locale: "id_ID",
     type: "website",
   },
