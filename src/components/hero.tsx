@@ -88,8 +88,8 @@ export function Hero() {
                     marginTop: "-1.375rem",
                   }}
                 >
-                  <div className="orbit-icon relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-white shadow-md shadow-navy-900/10 dark:bg-navy-800">
-                    <Image src={src} alt="" fill sizes="44px" className="object-cover p-2" />
+                  <div className="orbit-icon relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-full">
+                    <Image src={src} alt="" fill sizes="44px" className="object-contain p-1" />
                   </div>
                 </div>
               );
