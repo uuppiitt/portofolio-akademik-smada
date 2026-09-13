@@ -15,7 +15,7 @@ export const profile = {
     "Manajemen organisasi siswa",
     "Pengembangan web front-end",
   ],
-  email: "abdullahmufidzakaria22@email.com",
+  email: "abdullahmufidzakaria22@gmail.com",
   whatsapp: "https://wa.me/6283898385041",
   instagram: "https://instagram.com/uppitt_",
   github: "https://github.com/uuppiitt",
