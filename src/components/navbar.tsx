@@ -6,7 +6,6 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { profile } from "@/data/profile";
 
 const links = [
   { href: "/", label: "Beranda" },
@@ -19,21 +18,14 @@ export function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
-  const initials = profile.name
-    .split(" ")
-    .map((part) => part[0])
-    .slice(0, 2)
-    .join("");
+  const siteName = "Uppit.";
 
   return (
     <header className="sticky top-0 z-40 bg-transparent">
       <div className="container-page flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-navy-900 font-display text-sm text-mist-50 dark:bg-gold-400 dark:text-navy-950">
-            {initials}
-          </span>
-          <span className="hidden font-display text-base leading-tight text-navy-900 dark:text-mist-50 sm:block">
-            {profile.name}
+        <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
+          <span className="font-display text-lg text-navy-900 dark:text-mist-50">
+            {siteName}
           </span>
         </Link>
 

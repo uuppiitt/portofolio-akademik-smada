@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Newsreader, Manrope } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
@@ -8,15 +8,10 @@ import { BackToTop } from "@/components/back-to-top";
 import { AnimatedBackground } from "@/components/animated-background";
 import { profile } from "@/data/profile";
 
-const newsreader = Newsreader({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-newsreader",
-  display: "swap",
-});
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  variable: "--font-manrope",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
   display: "swap",
 });
 
@@ -48,7 +43,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id" className="dark">
-      <body className={`${newsreader.variable} ${manrope.variable} font-sans`}>
+      <body className={`${poppins.variable} font-sans`}>
         <AnimatedBackground />
         <LoadingScreen />
         <Navbar />

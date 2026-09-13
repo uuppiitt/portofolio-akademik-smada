@@ -33,6 +33,10 @@
   .card-surface {
     @apply bg-white dark:bg-navy-900 border border-ink-900/5 dark:border-mist-100/10;
   }
+
+  .font-display {
+    font-weight: 600;
+  }
 }
 
 @keyframes drift-one {

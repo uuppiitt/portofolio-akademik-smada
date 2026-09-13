@@ -34,8 +34,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ["var(--font-newsreader)", "Georgia", "serif"],
-        sans: ["var(--font-manrope)", "system-ui", "sans-serif"],
+        display: ["var(--font-poppins)", "system-ui", "sans-serif"],
+        sans: ["var(--font-poppins)", "system-ui", "sans-serif"],
       },
       maxWidth: {
         prose: "68ch",

@@ -5,7 +5,6 @@ import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { GalleryCard } from "@/components/gallery-card";
 import { CertificateGallery } from "@/components/certificate-gallery";
-import { TaskCard } from "@/components/task-card";
 import { tasks } from "@/data/tasks";
 import { galleryItems } from "@/data/gallery";
 import { certificates } from "@/data/certificates";
@@ -22,17 +21,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-
-      <section className="border-y border-ink-900/5 bg-white/70 py-12 backdrop-blur-sm dark:border-mist-100/10 dark:bg-navy-900/60">
-        <div className="container-page grid grid-cols-2 gap-8 md:grid-cols-4">
-          {stats.map((stat) => (
-            <div key={stat.label}>
-              <p className="font-display text-3xl text-navy-900 dark:text-gold-400">{stat.value}</p>
-              <p className="mt-1 text-sm text-ink-500 dark:text-mist-100/60">{stat.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* Tentang Saya */}
       <section className="section-pad">
@@ -96,35 +84,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Portofolio Akademik preview */}
-      <section className="section-pad bg-white/70 backdrop-blur-sm dark:bg-navy-900/60">
-        <div className="container-page">
-          <Reveal>
-            <SectionHeading
-              kicker="Portofolio Akademik"
-              title="Semua tugas, tersimpan rapi dan siap dinilai"
-              description="Guru dapat mencari, memfilter berdasarkan kelas dan mata pelajaran, lalu membaca setiap tugas langsung dari halaman detail — tanpa perlu mengunduh berkas."
-            />
-          </Reveal>
-          <Reveal delay={0.1} className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {tasks.slice(0, 3).map((task) => (
-              <TaskCard key={task.slug} task={task} />
-            ))}
-          </Reveal>
-          <Reveal delay={0.2} className="mt-8">
-            <Link
-              href="/tugas"
-              className="inline-flex items-center gap-2 text-sm font-medium text-navy-900 dark:text-gold-400"
-            >
-              Jelajahi seluruh arsip tugas
-              <ArrowRight size={16} />
-            </Link>
-          </Reveal>
-        </div>
-      </section>
-
       {/* Pengalaman & Karya preview */}
-      <section className="section-pad">
+      <section className="section-pad bg-white/70 backdrop-blur-sm dark:bg-navy-900/60">
         <div className="container-page">
           <Reveal>
             <SectionHeading
@@ -151,7 +112,7 @@ export default function HomePage() {
       </section>
 
       {/* Sertifikat */}
-      <section className="section-pad bg-white/70 backdrop-blur-sm dark:bg-navy-900/60">
+      <section className="section-pad">
         <div className="container-page">
           <Reveal>
             <SectionHeading
@@ -163,6 +124,18 @@ export default function HomePage() {
           <Reveal delay={0.1} className="mt-8">
             <CertificateGallery certificates={certificates} />
           </Reveal>
+        </div>
+      </section>
+
+      {/* Statistik ringkas */}
+      <section className="border-t border-ink-900/5 bg-white/70 py-12 backdrop-blur-sm dark:border-mist-100/10 dark:bg-navy-900/60">
+        <div className="container-page grid grid-cols-2 gap-8 md:grid-cols-4">
+          {stats.map((stat) => (
+            <div key={stat.label}>
+              <p className="font-display text-3xl text-navy-900 dark:text-gold-400">{stat.value}</p>
+              <p className="mt-1 text-sm text-ink-500 dark:text-mist-100/60">{stat.label}</p>
+            </div>
+          ))}
         </div>
       </section>
     </>
