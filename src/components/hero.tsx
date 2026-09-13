@@ -30,6 +30,7 @@ const orbitImages = [
   "/images/orbit/icon-3.webp",
   "/images/orbit/icon-4.webp",
   "/images/orbit/icon-5.webp",
+  "/images/orbit/icon-6.webp",
 ];
 const RADIUS = 175;
 
