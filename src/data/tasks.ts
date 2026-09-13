@@ -15,16 +15,16 @@ import type { Task } from "@/types";
  */
 export const tasks: Task[] = [
   {
-    slug: "analisis-cerpen-perahu-kertas",
-    title: "Analisis Unsur Intrinsik Cerpen \"Perahu Kertas\"",
-    subject: "Bahasa Indonesia",
-    grade: "XI",
-    teacher: "Ibu Siti Nurhaliza, S.Pd.",
-    date: "2026-08-10",
-    description: "Analisis tema, alur, penokohan, dan sudut pandang pada cerpen yang ditentukan.",
+    slug: "tugas-algoritma-latihan-1-2",
+    title: "Tugas Algoritma Latihan 1 & 2",
+    subject: "Informatika",
+    grade: "X",
+    teacher: "Ibu Galuh Maulidia, S.Pd.",
+    date: "2024-08-08",
+    description: "",
     longDescription:
-      "Tugas ini membahas unsur intrinsik cerpen \"Perahu Kertas\" secara menyeluruh, mencakup tema utama, struktur alur, karakterisasi tokoh, latar, sudut pandang, dan amanat cerita. Analisis disusun dalam format esai lima paragraf dengan kutipan pendukung dari teks.",
-    pdfUrl: "https://drive.google.com/file/d/1a2b3c4d5e6f7g8h9i0j/preview",
+      "",
+    pdfUrl: "https://drive.google.com/file/d/1LQ7u_7bS3sv03WVcklcqun5fBNVFPvtw/preview",
   },
   {
     slug: "laporan-praktikum-hukum-newton",
