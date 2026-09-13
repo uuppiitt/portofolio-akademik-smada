@@ -18,7 +18,7 @@ export default function ExperienceAndWorkPage() {
           <SectionHeading
             kicker="Pengalaman & Karya"
             title="Perjalanan organisasi dan hasil karya"
-            description="Kumpulan dokumentasi keterlibatan di OSIS, MPK, kepanitiaan, event sekolah, serta hasil desain dan multimedia yang pernah dikerjakan."
+            description="Kumpulan dokumentasi keterlibatan di OSIS, MPK, kepanitiaan, event sekolah, serta hasil karya yang pernah saya kerjakan."
           />
         </Reveal>
 
