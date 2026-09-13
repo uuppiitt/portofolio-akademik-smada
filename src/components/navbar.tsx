@@ -26,7 +26,7 @@ export function Navbar() {
     .join("");
 
   return (
-    <header className="sticky top-0 z-40 border-b border-ink-900/5 bg-mist-50/85 backdrop-blur dark:border-mist-100/10 dark:bg-navy-950/85">
+    <header className="sticky top-0 z-40 bg-transparent">
       <div className="container-page flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <span className="flex h-9 w-9 items-center justify-center rounded-full bg-navy-900 font-display text-sm text-mist-50 dark:bg-gold-400 dark:text-navy-950">
@@ -45,13 +45,20 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "rounded-md px-3 py-2 text-sm transition-colors",
+                  "relative rounded-md px-3 py-2 text-sm transition-colors",
                   active
                     ? "text-navy-900 dark:text-gold-400 font-medium"
                     : "text-ink-500 hover:text-navy-900 dark:text-mist-100/70 dark:hover:text-mist-50"
                 )}
               >
                 {link.label}
+                {active && (
+                  <motion.span
+                    layoutId="nav-active-underline"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                    className="absolute -bottom-0.5 left-3 right-3 h-[2px] rounded-full bg-gold-400"
+                  />
+                )}
               </Link>
             );
           })}
@@ -77,7 +84,7 @@ export function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="overflow-hidden border-t border-ink-900/5 dark:border-mist-100/10 lg:hidden"
+            className="overflow-hidden border-t border-ink-900/5 bg-mist-50/95 backdrop-blur dark:border-mist-100/10 dark:bg-navy-950/95 lg:hidden"
           >
             <div className="container-page flex flex-col gap-1 py-3">
               {links.map((link) => {

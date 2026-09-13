@@ -30,9 +30,8 @@ const orbitImages = [
   "/images/orbit/icon-3.webp",
   "/images/orbit/icon-4.webp",
   "/images/orbit/icon-5.webp",
-  "/images/orbit/icon-6.webp",
 ];
-const RADIUS = 175;
+const RADIUS = 190;
 
 export function Hero() {
   return (
@@ -73,7 +72,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
-          className="relative mx-auto flex h-[22rem] w-[22rem] items-center justify-center"
+          className="relative mx-auto flex h-[26rem] w-[24rem] items-center justify-center"
         >
           {/* Cincin gambar yang berputar di belakang foto */}
           <div className="orbit-ring absolute inset-0">
@@ -97,19 +96,21 @@ export function Hero() {
             })}
           </div>
 
-          {/* Foto profil semi-transparan agar ikon di belakang terlihat */}
-          <div className="relative h-64 w-64 overflow-hidden rounded-full bg-mist-200 opacity-90 ring-8 ring-mist-50 dark:bg-navy-900 dark:ring-navy-950">
+          {/* Foto profil: tanpa background, tanpa ring, ukuran lebih besar.
+              Gunakan foto dengan background sudah dihapus (PNG/WEBP transparan)
+              agar badan terlihat menyatu dan bagian bawahnya tertutup rapi oleh kartu status. */}
+          <div className="relative h-80 w-72 sm:h-96 sm:w-80">
             <Image
               src={profile.photoUrl}
               alt={`Foto profil ${profile.name}`}
               fill
-              sizes="256px"
-              className="object-cover"
+              sizes="320px"
+              className="object-contain object-bottom drop-shadow-2xl"
               priority
             />
           </div>
 
-          <div className="card-surface absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-2xl px-5 py-3 shadow-lg shadow-navy-900/10">
+          <div className="card-surface absolute -bottom-4 left-1/2 z-10 -translate-x-1/2 whitespace-nowrap rounded-2xl px-5 py-3 shadow-lg shadow-navy-900/10">
             <p className="text-xs text-ink-300 dark:text-mist-100/50">Status Akademik</p>
             <p className="mt-0.5 font-display text-sm text-navy-900 dark:text-mist-50">
               Kelas XII · Tahun Ajaran 2025/2026
