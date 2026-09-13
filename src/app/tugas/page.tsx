@@ -16,7 +16,7 @@ export default function TasksPage() {
           <SectionHeading
             kicker="Portofolio Akademik"
             title="Arsip tugas sekolah"
-            description="Setiap tugas dapat dibuka langsung sebagai PDF di halaman detail — guru tidak perlu mengunduh berkas untuk memberi penilaian."
+            description="Setiap tugas dapat dibuka langsung sebagai PDF di halaman detail."
           />
         </Reveal>
 
