@@ -26,10 +26,10 @@ const item = {
  */
 const orbitImages = [
   "/images/orbit/icon-1.webp",
-  "/images/orbit/icon-2.png",
-  "/images/orbit/icon-3.png",
-  "/images/orbit/icon-4.png",
-  "/images/orbit/icon-5.png",
+  "/images/orbit/icon-2.webp",
+  "/images/orbit/icon-3.webp",
+  "/images/orbit/icon-4.webp",
+  "/images/orbit/icon-5.webp",
 ];
 const RADIUS = 175;
 
