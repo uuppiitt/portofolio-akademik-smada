@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: `${profile.name} — Portofolio Akademik`,
     description: profile.tagline,
     url: siteUrl,
-    siteName: profile.name,
+    siteName: "Portofolio Uppit.",
     locale: "id_ID",
     type: "website",
   },
