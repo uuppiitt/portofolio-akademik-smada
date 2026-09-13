@@ -6,7 +6,6 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { ThemeToggle } from "./theme-toggle";
 import { profile } from "@/data/profile";
 
 const links = [
@@ -59,7 +58,6 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <ThemeToggle />
           <button
             type="button"
             className="flex h-9 w-9 items-center justify-center rounded-full border border-ink-900/10 text-ink-700 dark:border-mist-100/15 dark:text-mist-100 lg:hidden"

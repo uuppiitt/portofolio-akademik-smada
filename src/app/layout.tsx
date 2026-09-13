@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Newsreader, Manrope } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { LoadingScreen } from "@/components/loading-screen";
@@ -48,16 +47,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="id" suppressHydrationWarning>
+    <html lang="id" className="dark">
       <body className={`${newsreader.variable} ${manrope.variable} font-sans`}>
-        <ThemeProvider>
-          <AnimatedBackground />
-          <LoadingScreen />
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-          <BackToTop />
-        </ThemeProvider>
+        <AnimatedBackground />
+        <LoadingScreen />
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+        <BackToTop />
       </body>
     </html>
   );
