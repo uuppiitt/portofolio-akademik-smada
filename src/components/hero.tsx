@@ -25,7 +25,7 @@ const item = {
  * Ukuran disarankan: persegi (1:1), minimal 100x100px, background transparan (PNG) lebih bagus.
  */
 const orbitImages = [
-  "/images/orbit/icon-1.png",
+  "/images/orbit/icon-1.webp",
   "/images/orbit/icon-2.png",
   "/images/orbit/icon-3.png",
   "/images/orbit/icon-4.png",
