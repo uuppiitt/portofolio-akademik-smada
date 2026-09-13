@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Camera, Code2, Mail, Megaphone, Palette, Users } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import { profile } from "@/data/profile";
 
 const container = {
@@ -18,7 +18,19 @@ const item = {
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
-const orbitIcons = [Code2, Palette, Users, Camera, Megaphone];
+/**
+ * Gambar/logo yang berputar mengelilingi foto profil.
+ * Ganti path di bawah ini dengan gambar kamu sendiri.
+ * Taruh file gambarnya di: public/images/orbit/
+ * Ukuran disarankan: persegi (1:1), minimal 100x100px, background transparan (PNG) lebih bagus.
+ */
+const orbitImages = [
+  "/images/orbit/icon-1.png",
+  "/images/orbit/icon-2.png",
+  "/images/orbit/icon-3.png",
+  "/images/orbit/icon-4.png",
+  "/images/orbit/icon-5.png",
+];
 const RADIUS = 175;
 
 export function Hero() {
@@ -62,10 +74,10 @@ export function Hero() {
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
           className="relative mx-auto flex h-[22rem] w-[22rem] items-center justify-center"
         >
-          {/* Cincin ikon yang berputar di belakang foto */}
+          {/* Cincin gambar yang berputar di belakang foto */}
           <div className="orbit-ring absolute inset-0">
-            {orbitIcons.map((Icon, index) => {
-              const angle = (360 / orbitIcons.length) * index;
+            {orbitImages.map((src, index) => {
+              const angle = (360 / orbitImages.length) * index;
               return (
                 <div
                   key={index}
@@ -76,8 +88,8 @@ export function Hero() {
                     marginTop: "-1.375rem",
                   }}
                 >
-                  <div className="orbit-icon flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-md shadow-navy-900/10 dark:bg-navy-800">
-                    <Icon size={18} className="text-navy-800 dark:text-gold-400" />
+                  <div className="orbit-icon relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-white shadow-md shadow-navy-900/10 dark:bg-navy-800">
+                    <Image src={src} alt="" fill sizes="44px" className="object-cover p-2" />
                   </div>
                 </div>
               );

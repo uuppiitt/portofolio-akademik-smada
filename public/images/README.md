@@ -26,6 +26,16 @@ Sesuai `src/data/certificates.ts`, siapkan (ditampilkan langsung di halaman Bera
 
 Bisa berupa hasil scan atau screenshot sertifikat, rasio 4:3.
 
+## 4. Ikon Berputar di Beranda — `public/images/orbit/`
+Sesuai `src/components/hero.tsx`, siapkan 5 gambar (logo/ikon kecil, PNG background transparan lebih bagus):
+- `icon-1.png`
+- `icon-2.png`
+- `icon-3.png`
+- `icon-4.png`
+- `icon-5.png`
+
+Rasio disarankan: persegi (1:1), minimal 100x100px. Boleh kurang atau lebih dari 5 gambar — kalau jumlahnya diubah, sesuaikan juga array `orbitImages` di `src/components/hero.tsx`.
+
 ## Catatan
 
 - Kamu bebas mengganti nama file, asal juga mengubah `imageUrl` / `photoUrl` yang sesuai di file data (`src/data/profile.ts`, `src/data/gallery.ts`, `src/data/certificates.ts`).
