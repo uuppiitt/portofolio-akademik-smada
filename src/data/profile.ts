@@ -4,11 +4,11 @@ export const profile = {
   name: "Abdullah Mufid Zakaria",
   status: "Siswa Kelas XII · SMA Negeri 2 Lumajang",
   tagline:
-    "Merancang antarmuka, mengedit visual, dan menggerakkan acara sekolah — lalu mendokumentasikan semuanya di satu tempat.",
+    "",
   location: "Lumajang, Jawa Timur",
   photoUrl: "/images/profile.webp",
   about:
-    "Saya siswa jurusan Informatika yang menghabiskan waktu luang di antara kelas desain, rapat OSIS, dan tenggat kepanitiaan. Saya percaya dokumentasi yang rapi adalah bentuk tanggung jawab — baik untuk tugas sekolah maupun untuk proyek organisasi.",
+    "Saya siswa jurusan Teknik yang menghabiskan waktu luang di antara kelas desain, rapat OSIS, dan tenggat kepanitiaan. Saya percaya dokumentasi yang rapi adalah bentuk tanggung jawab — baik untuk tugas sekolah maupun untuk proyek organisasi.",
   interests: [
     "Desain antarmuka & pengalaman pengguna",
     "Fotografi dan videografi acara",
