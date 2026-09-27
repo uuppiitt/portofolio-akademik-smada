@@ -2,9 +2,9 @@ import type { SkillGroup } from "@/types";
 
 export const profile = {
   name: "Abdullah Mufid Zakaria",
-  status: "Siswa Kelas XII · SMA Negeri 2 Lumajang",
+  status: "Siswa Kelas XII-C · SMA Negeri 2 Lumajang",
   tagline:
-    "",
+    "....",
   location: "Lumajang, Jawa Timur",
   photoUrl: "/images/profile.webp",
   about:
