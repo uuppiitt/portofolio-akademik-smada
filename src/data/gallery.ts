@@ -58,7 +58,7 @@ export const galleryItems: GalleryItem[] = [
   {
     id: "gal-6",
     title: "Visual Jockey 1st Aniversary E.M.M",
-    category: "Kepanitiaan",
+    category: "Event Organizer",
     description: "",
     imageUrl: "/images/gallery/wisuda.jpg",
     year: "2026",
@@ -66,7 +66,7 @@ export const galleryItems: GalleryItem[] = [
   {
     id: "gal-7",
     title: "Visual Jockey Crown Of Culture Baladewa Dance School",
-    category: "Kepanitiaan",
+    category: "Event Organizer",
     description: "",
     imageUrl: "/images/gallery/logo-osis.jpg",
     year: "2026",
@@ -86,31 +86,5 @@ export const galleryItems: GalleryItem[] = [
     description: "Sistem desain grid dan template konten untuk akun Instagram resmi sekolah.",
     imageUrl: "/images/gallery/feed-instagram.jpg",
     year: "2024",
-  },
-  {
-    id: "gal-10",
-    title: "Situs Pendaftaran LDKS",
-    category: "Karya Desain",
-    description: "Halaman pendaftaran sederhana dengan formulir dan info kegiatan LDKS 2025.",
-    imageUrl: "/images/gallery/website-ldks.jpg",
-    link: "https://github.com/ranggaaditya/ldks-landing",
-    year: "2025",
-  },
-  {
-    id: "gal-11",
-    title: "Highlight Reel Class Meeting",
-    category: "Video & Multimedia",
-    description: "Video rekap tiga hari class meeting, dipublikasikan di kanal YouTube sekolah.",
-    imageUrl: "/images/gallery/video-classmeeting.jpg",
-    year: "2024",
-  },
-  {
-    id: "gal-12",
-    title: "Kru Multimedia Sekolah",
-    category: "Video & Multimedia",
-    description:
-      "Bertanggung jawab atas desain publikasi sekolah, dokumentasi upacara, dan pengelolaan akun Instagram sekolah.",
-    imageUrl: "/images/gallery/multimedia.jpg",
-    year: "2023",
   },
 ];
