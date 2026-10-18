@@ -350,4 +350,40 @@ export const tasks: Task[] = [
       "",
     pdfUrl: "https://drive.google.com/file/d/1FlRRRPaazEWW_ER2-Teu_-dLUyb5NnGe/preview",
   },
+    {
+    slug: "tugas-uji-pemahaman-limit-aljabar",
+    title: "Tugas Uji Pemahaman Limit Aljabar",
+    subject: "Matematika",
+    grade: "XII",
+    teacher: "Bapak Wahyudi Hidayat, M.Pd.",
+    date: "2026-09-06",
+    description: "",
+    longDescription:
+      "",
+    pdfUrl: "https://drive.google.com/file/d/1wPUHfs8BKLGehz6LIM5Pi3rbfrooIW7I/preview",
+  },
+      {
+    slug: "tugas-uji-kompetensi-limit-trigonometri",
+    title: "Tugas Uji Kompetensi Limit Trigonometri",
+    subject: "Matematika",
+    grade: "XII",
+    teacher: "Bapak Wahyudi Hidayat, M.Pd.",
+    date: "2026-09-06",
+    description: "",
+    longDescription:
+      "",
+    pdfUrl: "https://drive.google.com/file/d/1myTfI-3j2n3Q4KamnJIaX-VVUSQ6Bmz3/preview",
+  },
+      {
+    slug: "tugas-latihan-soal-turunan-fungsi-aljabar",
+    title: "Tugas Latihan Soal Turunan Fungsi Aljabar",
+    subject: "Matematika",
+    grade: "XII",
+    teacher: "Bapak Wahyudi Hidayat, M.Pd.",
+    date: "2026-09-30",
+    description: "",
+    longDescription:
+      "",
+    pdfUrl: "https://drive.google.com/file/d/1_P4-caEM8g1UyH1kf2pAbCApQp7dzw3P/preview",
+  },
 ];
