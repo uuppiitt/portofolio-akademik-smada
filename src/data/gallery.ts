@@ -12,7 +12,7 @@ import type { GalleryItem } from "@/types";
  */
 export const galleryItems: GalleryItem[] = [
   {
-    id: "gal-1",
+    id: "gal-5",
     title: "CO Sekbid 9 NEXIVATOR 49",
     category: "Organisasi",
     description:
@@ -21,7 +21,7 @@ export const galleryItems: GalleryItem[] = [
     year: "2025-2026",
   },
   {
-    id: "gal-2",
+    id: "gal-6",
     title: "CO Smada Esport Clash 2025",
     category: "Organisasi",
     description:
@@ -30,7 +30,7 @@ export const galleryItems: GalleryItem[] = [
     year: "2025",
   },
   {
-    id: "gal-3",
+    id: "gal-7",
     title: "Sie Acara LIGA SMADA",
     category: "Organisasi",
     description:
@@ -48,7 +48,7 @@ export const galleryItems: GalleryItem[] = [
     year: "2025",
   },
   {
-    id: "gal-5",
+    id: "gal-3",
     title: "MD Wisuda Angkatan 47",
     category: "Kepanitiaan",
     description: "",
@@ -56,7 +56,7 @@ export const galleryItems: GalleryItem[] = [
     year: "2026",
   },
   {
-    id: "gal-6",
+    id: "gal-2",
     title: "Visual Jockey 1st Aniversary E.M.M",
     category: "Kepanitiaan",
     description: "",
@@ -64,7 +64,7 @@ export const galleryItems: GalleryItem[] = [
     year: "2026",
   },
   {
-    id: "gal-7",
+    id: "gal-1",
     title: "Visual Jockey Crown Of Culture Baladewa Dance School",
     category: "Kepanitiaan",
     description: "",
