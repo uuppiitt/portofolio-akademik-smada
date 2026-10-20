@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -17,11 +17,26 @@ const links = [
 export function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const siteName = "Uppit.";
 
   return (
-    <header className="sticky top-0 z-40 bg-transparent">
+    <header
+      className={cn(
+        "sticky top-0 z-40 border-b transition-[background-color,backdrop-filter,border-color,box-shadow] duration-300",
+        scrolled || open
+          ? "border-ink-900/10 bg-mist-50/60 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.25)] backdrop-blur-xl backdrop-saturate-150 dark:border-mist-100/10 dark:bg-navy-950/40"
+          : "border-transparent bg-transparent"
+      )}
+    >
       <div className="container-page flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
           <span className="font-display text-lg text-navy-900 dark:text-mist-50">
