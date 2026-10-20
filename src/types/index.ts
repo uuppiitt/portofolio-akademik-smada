@@ -18,7 +18,8 @@ export type GalleryCategory =
   | "Kepanitiaan"
   | "Dokumentasi Event"
   | "Karya Desain"
-  | "Video & Multimedia";
+  | "Video & Multimedia"
+  | "Event Organizer";
 
 export interface GalleryItem {
   id: string;
