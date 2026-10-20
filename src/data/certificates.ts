@@ -6,13 +6,13 @@ export const certificates: Certificate[] = [
     title: "Juara 1 Film Pendek Kabupaten Lumajang",
     issuer: "FLS3N",
     year: "2026",
-    imageUrl: "/images/certificates/cert-poster.jpg",
+    imageUrl: "/images/certificates/sertif1.webp",
   },
   {
     id: "cert-2",
     title: "Harapan 1 Sinematografi",
     issuer: "SMA AWARDS",
     year: "2025",
-    imageUrl: "/images/certificates/cert-ldks.jpg",
+    imageUrl: "/images/certificates/sertif2.webp",
   },
 ];
