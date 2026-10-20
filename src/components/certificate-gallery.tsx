@@ -19,12 +19,12 @@ export function CertificateGallery({ certificates }: { certificates: Certificate
             onClick={() => setActive(cert)}
             className="group text-left"
           >
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-mist-200 dark:bg-navy-800">
+            <div className="relative aspect-video overflow-hidden rounded-2xl bg-mist-200 dark:bg-navy-800">
               <Image
                 src={cert.imageUrl}
                 alt={cert.title}
                 fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                sizes="(max-width: 1080px) 100vw, (max-width: 1920px) 50vw, 33vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
