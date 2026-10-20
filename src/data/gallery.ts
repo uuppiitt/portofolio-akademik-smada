@@ -11,31 +11,28 @@ import type { GalleryItem } from "@/types";
  *    "Dokumentasi Event", "Karya Desain", "Video & Multimedia".
  */
 export const galleryItems: GalleryItem[] = [
-  {
-    id: "gal-5",
-    title: "CO Sekbid 9 NEXIVATOR 49",
-    category: "Organisasi",
-    description:
-      "Memimpin Seksi Bidang 9 Teknologi Informasi & Komunikasi (2025 — 2026).",
-    imageUrl: "/images/gallery/osis.jpg",
-    year: "2025-2026",
+    {
+    id: "gal-1",
+    title: "Visual Jockey Crown Of Culture Baladewa Dance School",
+    category: "Kepanitiaan",
+    description: "",
+    imageUrl: "/images/gallery/logo-osis.jpg",
+    year: "2026",
+  },
+    {
+    id: "gal-2",
+    title: "MD Wisuda Angkatan 47",
+    category: "Kepanitiaan",
+    description: "",
+    imageUrl: "/images/gallery/ldks.jpg",
+    year: "2026",
   },
   {
-    id: "gal-6",
-    title: "CO Smada Esport Clash 2025",
-    category: "Organisasi",
-    description:
-      "",
-    imageUrl: "/images/gallery/mpk.jpg",
-    year: "2025",
-  },
-  {
-    id: "gal-7",
-    title: "Sie Acara LIGA SMADA",
-    category: "Organisasi",
-    description:
-      "",
-    imageUrl: "/images/gallery/pensi.jpg",
+    id: "gal-3",
+    title: "Visual Jockey 1st Aniversary E.M.M",
+    category: "Kepanitiaan",
+    description: "",
+    imageUrl: "/images/gallery/wisuda.jpg",
     year: "2026",
   },
   {
@@ -48,36 +45,39 @@ export const galleryItems: GalleryItem[] = [
     year: "2025",
   },
   {
-    id: "gal-3",
-    title: "MD Wisuda Angkatan 47",
-    category: "Kepanitiaan",
-    description: "",
-    imageUrl: "/images/gallery/ldks.jpg",
-    year: "2026",
-  },
-  {
-    id: "gal-2",
-    title: "Visual Jockey 1st Aniversary E.M.M",
-    category: "Kepanitiaan",
-    description: "",
-    imageUrl: "/images/gallery/wisuda.jpg",
-    year: "2026",
-  },
-  {
-    id: "gal-1",
-    title: "Visual Jockey Crown Of Culture Baladewa Dance School",
-    category: "Kepanitiaan",
-    description: "",
-    imageUrl: "/images/gallery/logo-osis.jpg",
-    year: "2026",
-  },
-  {
-    id: "gal-8",
+    id: "gal-5",
     title: "Wakil Ketua Tim Pinandhita Production",
     category: "Organisasi",
     description: "",
     imageUrl: "/images/gallery/poster-pensi.jpg",
     year: "2025-2026",
+  },
+  {
+    id: "gal-6",
+    title: "CO Sekbid 9 NEXIVATOR 49",
+    category: "Organisasi",
+    description:
+      "Memimpin Seksi Bidang 9 Teknologi Informasi & Komunikasi (2025 — 2026).",
+    imageUrl: "/images/gallery/osis.jpg",
+    year: "2025-2026",
+  },
+  {
+    id: "gal-7",
+    title: "CO Smada Esport Clash 2025",
+    category: "Organisasi",
+    description:
+      "",
+    imageUrl: "/images/gallery/mpk.jpg",
+    year: "2025",
+  },
+  {
+    id: "gal-8",
+    title: "Sie Acara LIGA SMADA",
+    category: "Organisasi",
+    description:
+      "",
+    imageUrl: "/images/gallery/pensi.jpg",
+    year: "2026",
   },
   {
     id: "gal-9",
