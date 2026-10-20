@@ -16,7 +16,7 @@ export const galleryItems: GalleryItem[] = [
     title: "Visual Jockey Crown Of Culture Baladewa Dance School",
     category: "Event Organizer",
     description: "",
-    imageUrl: "/images/gallery/logo-osis.jpg",
+    imageUrl: "/images/gallery/baladewa.webp",
     year: "2026",
   },
     {
@@ -24,7 +24,7 @@ export const galleryItems: GalleryItem[] = [
     title: "MD Wisuda Angkatan 47",
     category: "Kepanitiaan",
     description: "",
-    imageUrl: "/images/gallery/ldks.jpg",
+    imageUrl: "/images/gallery/wisuda47.webp",
     year: "2026",
   },
   {
@@ -32,7 +32,7 @@ export const galleryItems: GalleryItem[] = [
     title: "Visual Jockey 1st Aniversary E.M.M",
     category: "Event Organizer",
     description: "",
-    imageUrl: "/images/gallery/wisuda.jpg",
+    imageUrl: "/images/gallery/emm.webp",
     year: "2026",
   },
   {
@@ -41,7 +41,7 @@ export const galleryItems: GalleryItem[] = [
     category: "Kepanitiaan",
     description:
       "",
-    imageUrl: "/images/gallery/classmeeting.jpg",
+    imageUrl: "/images/gallery/wisuda46.webp",
     year: "2025",
   },
   {
