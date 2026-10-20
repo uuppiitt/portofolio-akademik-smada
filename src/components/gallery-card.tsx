@@ -6,7 +6,7 @@ import type { GalleryItem } from "@/types";
 function CardBody({ item }: { item: GalleryItem }) {
   return (
     <>
-      <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-mist-200 dark:bg-navy-800">
+      <div className="relative aspect-video overflow-hidden rounded-2xl bg-mist-200 dark:bg-navy-800">
         <Image
           src={item.imageUrl}
           alt={item.title}
