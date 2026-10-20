@@ -14,7 +14,7 @@ export const galleryItems: GalleryItem[] = [
     {
     id: "gal-1",
     title: "Visual Jockey Crown Of Culture Baladewa Dance School",
-    category: "Kepanitiaan",
+    category: "Event Organizer",
     description: "",
     imageUrl: "/images/gallery/logo-osis.jpg",
     year: "2026",
@@ -30,7 +30,7 @@ export const galleryItems: GalleryItem[] = [
   {
     id: "gal-3",
     title: "Visual Jockey 1st Aniversary E.M.M",
-    category: "Kepanitiaan",
+    category: "Event Organizer",
     description: "",
     imageUrl: "/images/gallery/wisuda.jpg",
     year: "2026",
